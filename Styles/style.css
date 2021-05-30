@@ -763,7 +763,7 @@ h3 {
   }
 
   .logo {
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
     align-items: left;
     margin: 0px;
@@ -774,12 +774,13 @@ h3 {
     display: none;
   }
 
+  .bander-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   h1 {
-    font: italic normal bold 20px/40px Roboto Condensed;
-    color: #187a93;
-    text-shadow: 0px 1px 2px #de7c4480;
-    text-transform: uppercase;
-    text-align: left;
+    display: none;
   }
 
   .bander-container img {
@@ -869,7 +870,7 @@ h3 {
 
   .products-name-price {
     grid-area: 3 / 1 / 4 / 2;
-    font-size: 7px;
+    font-size: 3px;
   }
 
   .product-like-cta {
@@ -934,6 +935,10 @@ h3 {
   .about-us-footer,
   .footer-update {
     display: none;
+  }
+
+  footer .logo {
+    display: inline;
   }
 
   .copyright-icon {
