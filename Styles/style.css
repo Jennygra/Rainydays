@@ -327,10 +327,6 @@ h3 {
     margin: 0;
   }
 
-  .announcement {
-    width: 100%;
-  }
-
   .announcement p {
     font-size: 30px;
   }
@@ -379,12 +375,19 @@ h3 {
     text-shadow: 0px 3px 6px #de7c4480;
     text-transform: uppercase;
     text-align: left;
+    display: none;
+  }
+
+  .bander-container {
+    display: flex;
+    flex-direction: column;
   }
 
   .bander-container img {
     width: 100%;
     margin: 0;
     padding: 0;
+    align-items: center;
   }
 
   .custom-promises {
@@ -416,6 +419,7 @@ h3 {
     column-gap: 50px;
     padding: 100px;
     text-align: center;
+    width: 100%;
   }
 
   .men-woman-menu img {
@@ -443,12 +447,17 @@ h3 {
     padding: 5px;
   }
 
+  .animation-jacket {
+    width: 100%;
+  }
+
   .feature-collection {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     padding: 100px;
     row-gap: 50px;
+    width: 100%;
   }
 
   .feature-products {
@@ -484,6 +493,7 @@ h3 {
       no-repeat padding-box;
     box-shadow: 0px 3px 6px #de7c4480;
     border: 5px solid #187a93;
+    width: 100%;
   }
 
   .footer-update h5 {
@@ -495,9 +505,8 @@ h3 {
 
   footer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 70px 200px;
+    grid-template-columns: 1fr;
+    column-gap: 50px;
   }
 
   .custom-service-footer ul {
