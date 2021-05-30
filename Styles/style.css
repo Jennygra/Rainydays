@@ -1,7 +1,6 @@
-/* Universal */
 * {
   margin: 0;
-  padding: o;
+  padding: 0;
 }
 
 /* Links */
@@ -10,6 +9,12 @@ a {
 }
 
 /* Header */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
 nav li {
   display: inline;
 }
@@ -31,6 +36,7 @@ nav a {
 .nav-about-contact li {
   font: italic normal bold 30px/35px Roboto Condensed;
   text-transform: none;
+  display: flex;
 }
 
 nav a:hover {
@@ -41,6 +47,10 @@ nav a:hover {
   width: 210px;
   height: 112px;
   margin: 30px 10px 0px 150px;
+}
+
+.nav-icon img {
+  margin: 15px;
 }
 
 /* Footer */
@@ -296,4 +306,601 @@ h3 {
   grid-column: -1/1;
   text-align: center;
   padding: 50px;
+}
+
+@media screen and (max-width: 1605px) and (min-width: 1001px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .announcement {
+    width: 100%;
+  }
+
+  .announcement p {
+    font-size: 30px;
+  }
+
+  .logo {
+    max-width: 200px;
+    height: auto;
+    align-items: left;
+    margin: 0px;
+  }
+
+  nav li,
+  .nav-icon {
+    display: none;
+  }
+
+  h1 {
+    font: italic normal bold 80px/100px Roboto Condensed;
+    color: #187a93;
+    text-shadow: 0px 3px 6px #de7c4480;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .bander-container img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .custom-promises {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap: 40px;
+    padding: 70px;
+  }
+
+  .custom-promises img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  h2 {
+    font: normal normal bold 30px/37px Roboto Condensed;
+    color: #44a6de;
+    text-transform: uppercase;
+  }
+
+  .custom-promises p {
+    font-size: 2em;
+  }
+
+  .men-woman-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    padding: 100px;
+    text-align: center;
+  }
+
+  .men-woman-menu img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cta-shop {
+    background-color: white;
+    border: 3px solid #0a3641;
+    font: normal bold 10px Roboto Condensed;
+    font-size: 25px;
+    color: #0a3641;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+
+  .cta-shop:hover {
+    background-color: #0a3641;
+    border: 3px solid #0a3641;
+    font: normal bold 10px Roboto Condensed;
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+
+  .feature-collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    padding: 100px;
+    row-gap: 50px;
+  }
+
+  .feature-products {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .feature-collection-img {
+    grid-area: 1/ 1 /3 / 3;
+  }
+
+  .products-name-price {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .product-like-cta {
+    grid-area: 3 / 2 / 4 / 3;
+    margin-left: auto;
+    height: auto;
+  }
+  .cta-see-more {
+    grid-column: 2;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  footer {
+    background: transparent
+      linear-gradient(180deg, #187a9300 0%, #13617568 96%, #0c3d4a 100%) 0% 0%
+      no-repeat padding-box;
+    box-shadow: 0px 3px 6px #de7c4480;
+    border: 5px solid #187a93;
+  }
+
+  .footer-update h5 {
+    font: italic;
+    color: #187a93;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 70px 200px;
+  }
+
+  .custom-service-footer ul {
+    list-style-type: none;
+    padding: 10px 0px 0px 0px;
+  }
+
+  .custom-service-footer a {
+    font: normal normal bold 35px/41px Roboto Condensed;
+    color: #0a3641;
+  }
+
+  .about-us-footer p,
+  .footer-update p,
+  .footer-update label {
+    font: normal normal normal 25px/29px Roboto Condensed;
+    color: #0a3641;
+    padding: 15px 0px 30px 0px;
+  }
+
+  footer input,
+  button {
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    border: 3px solid var(--unnamed-color-0a3641);
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 3px solid #0a3641;
+    border-radius: 50px;
+    margin: 5px 0px 15px 3px;
+  }
+
+  footer button {
+    text-transform: uppercase;
+    font: normal normal bold 22px/25px Roboto Condensed;
+    color: #de7c44;
+    background-color: white;
+    padding: 3px 8px;
+  }
+
+  footer button:hover {
+    color: white;
+    background-color: #de7c44;
+  }
+
+  .footer-update i {
+    padding: 20px 80px;
+  }
+
+  .copyright-icon {
+    color: white;
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 768px) {
+  * {
+    max-width: 1000px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .announcement {
+    width: 100%;
+  }
+
+  .announcement p {
+    font-size: 20px;
+  }
+
+  .logo {
+    max-width: 120px;
+    height: auto;
+    align-items: left;
+    margin: 0px;
+  }
+
+  nav li,
+  .nav-icon {
+    display: none;
+  }
+
+  h1 {
+    font: italic normal bold 30px/50px Roboto Condensed;
+    color: #187a93;
+    text-shadow: 0px 2px 4px #de7c4480;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .bander-container img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .custom-promises {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap: 40px;
+    padding: 50px;
+  }
+
+  .custom-promises img {
+    max-width: 70px;
+    height: auto;
+  }
+
+  h2 {
+    font: normal normal bold 20px/26px Roboto Condensed;
+    color: #44a6de;
+    text-transform: uppercase;
+  }
+
+  .custom-promises p {
+    font-size: 13px;
+  }
+
+  .men-woman-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5em;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .men-woman-menu img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cta-shop {
+    background-color: white;
+    border: 3px solid #0a3641;
+    font: normal bold 10px Roboto Condensed;
+    font-size: 25px;
+    color: #0a3641;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+
+  .cta-shop:hover {
+    background-color: #0a3641;
+    border: 3px solid #0a3641;
+    font: normal bold 10px Roboto Condensed;
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+
+  .animation-jacket {
+    display: none;
+  }
+
+  .feature-collection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    margin: 30px;
+  }
+
+  .feature-products {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .feature-collection-img {
+    grid-area: 1/ 1 /3 / 3;
+    width: 100%;
+  }
+
+  .products-name-price {
+    grid-area: 3 / 1 / 4 / 2;
+    font-size: 15px;
+  }
+
+  .product-like-cta {
+    grid-area: 3 / 2 / 4 / 3;
+    margin-left: auto;
+    max-width: 3px;
+    height: auto;
+  }
+
+  h3 {
+    font: italic normal bold 50px/70px Roboto Condensed;
+    color: #187a93;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .cta-see-more {
+    display: none;
+  }
+
+  footer {
+    background: transparent
+      linear-gradient(180deg, #187a9300 0%, #13617568 96%, #0c3d4a 100%) 0% 0%
+      no-repeat padding-box;
+    box-shadow: 0px 3px 6px #de7c4480;
+    border: 5px solid #187a93;
+  }
+
+  .footer-update h5 {
+    font: italic;
+    color: #187a93;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .custom-service-footer ul {
+    list-style-type: none;
+    padding: 10px 0px 0px 0px;
+  }
+
+  h5 {
+    color: #0a3641;
+    text-decoration: underline;
+    font: italic normal bold 20px/27px Roboto Condensed;
+  }
+
+  .custom-service-footer a {
+    font: normal normal bold 15px/18px Roboto Condensed;
+    color: #0a3641;
+  }
+
+  .about-us-footer,
+  .footer-update {
+    display: none;
+  }
+
+  .copyright-icon {
+    font-size: 10px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  * {
+    max-width: 767px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .announcement p {
+    font-size: 15px;
+  }
+
+  .logo {
+    max-width: 100px;
+    height: auto;
+    align-items: left;
+    margin: 0px;
+  }
+
+  nav li,
+  .nav-icon {
+    display: none;
+  }
+
+  h1 {
+    font: italic normal bold 20px/40px Roboto Condensed;
+    color: #187a93;
+    text-shadow: 0px 1px 2px #de7c4480;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .bander-container img {
+    width: 100%;
+  }
+
+  .custom-promises {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap: 40px;
+    padding: 50px;
+  }
+
+  .custom-promises img {
+    max-width: 50px;
+    height: auto;
+  }
+
+  h2 {
+    font: normal normal bold 15px/21px Roboto Condensed;
+    color: #44a6de;
+    text-transform: uppercase;
+  }
+
+  .custom-promises p {
+    font-size: 8px;
+  }
+
+  .men-woman-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1em;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .men-woman-menu img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cta-shop {
+    background-color: white;
+    border: 3px solid #0a3641;
+    font: normal bold 10px Roboto Condensed;
+    font-size: 10px;
+    color: #0a3641;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+
+  .cta-shop:hover {
+    background-color: #0a3641;
+    border: 3px solid #0a3641;
+    font: normal bold 10px Roboto Condensed;
+    font-size: 10px;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+
+  .animation-jacket {
+    display: none;
+  }
+
+  .feature-collection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    margin: 30px;
+  }
+
+  .feature-products {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .feature-collection-img {
+    grid-area: 1/ 1 /3 / 3;
+    width: 100%;
+  }
+
+  .products-name-price {
+    grid-area: 3 / 1 / 4 / 2;
+    font-size: 7px;
+  }
+
+  .product-like-cta {
+    grid-area: 3 / 2 / 4 / 3;
+    margin-left: auto;
+    max-width: 10px;
+    height: auto;
+  }
+
+  h3 {
+    font: italic normal bold 30px/23px Roboto Condensed;
+    color: #187a93;
+  }
+
+  h4 {
+    font-size: 10px;
+  }
+
+  .cta-see-more {
+    display: none;
+  }
+
+  footer {
+    background: transparent
+      linear-gradient(180deg, #187a9300 0%, #13617568 96%, #0c3d4a 100%) 0% 0%
+      no-repeat padding-box;
+    box-shadow: 0px 3px 6px #de7c4480;
+    border: 5px solid #187a93;
+  }
+
+  .footer-update h5 {
+    font: italic;
+    color: #187a93;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .custom-service-footer ul {
+    list-style-type: none;
+    padding: 10px 0px 0px 0px;
+  }
+
+  h5 {
+    color: #0a3641;
+    text-decoration: underline;
+    font: italic normal bold 20px/27px Roboto Condensed;
+  }
+
+  .custom-service-footer a {
+    font: normal normal bold 15px/18px Roboto Condensed;
+    color: #0a3641;
+  }
+
+  .about-us-footer,
+  .footer-update {
+    display: none;
+  }
+
+  .copyright-icon {
+    font-size: 10px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
 }
