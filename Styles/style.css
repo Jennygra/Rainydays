@@ -40,6 +40,8 @@
   .navigation a {
     text-decoration-line: none;
     color: #0a3641;
+    padding: 10px;
+    margin: 10px;
   }
 
   .navigation a:hover {
