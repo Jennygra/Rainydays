@@ -11,16 +11,21 @@
         <script src="https://kit.fontawesome.com/0da1880f97.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
+        <header class="Checkout-success-header">
                 <a href="index.html"><img src="Images/RainyDays_Logo.png" alt="Rainydays Logo"></a>
-                <img src="Images/Checkout-success/Payment-process-success.png" alt="Payment process - success">
         </header>
-        <main>
-            <div>
+        <main class="checkout-main">
+          <section class="checkout-proccess">
+            <img src="Images/Payment-process.png" alt="Payment process - success">
+          </section>
+          <section class="custom-form">
             <form method="POST">
-                <p> Custom information</p>
+            <div class="custom-information">
+                <h4> Custom information</h4>
                 <input type="email" id="email" required value="Email*" required>
-                <p>Shipping address</p>
+            </div>
+            <div class="shipping-info">
+                <h4>Shipping address</h4>
                 <input type="text" id="fname" Value="First name*" required>
                 <input type="text" id="lname" Value="Last name*" required>
                 <input type="text" id="address" Value="Street Address*" required>
@@ -28,29 +33,36 @@
                 <input type="text" id="zip" Value="Postcode*" required>
                 <input type="text" id="country" Value="Country*" required>
                 <input type="text" id="State" Value="State">
+                <div>
                 <input type="checkbox" id="billingaddress" name="billingaddress" value="Use different billing address">
                 <label for="billingaddress">Use different billing address</label>
+                </div>
                 <input type="text" id="phone number" Value="Phone (optional)">
-                <button>Continue to shipping</button>
-            </form>
             </div>
-            <div>
-                <div>
-                  <a href="cart.html">Edit Cart</a>
+            <div class="cta-to-shipping">
+                <button><a href="checkout-success.html">Continue to shipping</a></button>
+            </div>
+            </form>
+        </section>
+           <a href="cart.html">Edit Cart</a>
+            <section class="cart-product-summary">
+                <div class="cart-product-img">
                   <img src="Images/home-page-img/productlist-product1.jpg" alt="The blue jacket">
                   </div>
-                <div>
+                <div class="cart-product-info">
                   <p>Blue Jacket</p>
                   <p>SKU: 10888A123</p>
                   <p>COLOR: BLUE</p>
                   <p> SIZE: S</p>
                   <input type="number" id="quatity" value="1">
                 </div>
-                <div>
+                <div class="summary-price">
                     <p>nok 999</p>
                 </div>
-                <div>
-                    <p>Click here to enter your discount code</p>
+            </section>
+            <section class="amount-summary">
+                <hr>
+                <div class="price-summary">
                     <p>Sub total</p>
                     <p>nok 999</p>
                     <p>Delivery</p>
@@ -58,15 +70,17 @@
                     <p>Total</p>
                     <p>nok 999</p>
                 </div>
-            </div>
-              <div>
+            </section>
+        </main>
+            <footer class="terms-rights">
+              <div class="footer-terms">
                 <a href="#">Refund policy</a>
                 <a href="#">Privacy policy</a>
                 <a href="#">Terms of service</a>
-            </div>
-            <div>
+              </div>
+              <div class="footer-rights">
                 Copyright &copy; 2021 RainydaysCheckout - All Rights Reserved 
-            </div>
-        </main>
+              </div>
+            </footer>
     </body>
 </html>

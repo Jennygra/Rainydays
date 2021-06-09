@@ -51,10 +51,6 @@ nav {
   color: #0a3641;
 }
 
-/*.breadcrumble {
-    align-content: center;
-  }*/
-
 .breadcrumble a {
   text-decoration: none;
 }
@@ -778,6 +774,21 @@ h4 {
   text-decoration: underline;
 }
 
+.collection-page-list {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  align-items: center;
+}
+
+.collection-page-list img {
+  margin: 2em;
+}
+
+.collection-page-list p {
+  font: normal normal bold 45px/53px Roboto Condensed;
+}
+
 @media screen and (max-width: 768px) {
   .sort-collection p {
     display: none;
@@ -786,6 +797,16 @@ h4 {
   .sort-by-bar li {
     list-style: none;
     font: normal normal bold 19px/22px Roboto Condensed;
+  }
+
+  .collection-page-list p {
+    font: normal normal bold 22px/26px Roboto Condensed;
+  }
+
+  .collection-page-list img {
+    max-width: 30px;
+    height: auto;
+    margin: 1em;
   }
 }
 
@@ -813,14 +834,66 @@ h4 {
 }
 
 .cta-product-info a {
+  border: 3px solid #de7c44;
+  text-decoration: none;
+  font: normal normal bold 22px/25px Roboto Condensed;
+  color: #de7c44;
+  margin: 1em;
+  padding: 3px;
+  text-transform: uppercase;
+}
+
+.cta-product-info a:hover {
+  background-color: #de7c44;
+  color: white;
+}
+
+.product-description p {
+  font: normal normal normal 31px/37px Roboto Condensed;
+  color: #0a3641;
+  margin: 3em 5px;
+}
+
+.color-choices p,
+.size-choices p,
+.size-choices a {
+  font: normal normal bold 21px/24px Roboto Condensed;
+  color: #0a3641;
+}
+
+.size-choices a:hover {
+  color: #c95613;
+}
+
+.custome-ratings {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2em;
+}
+
+.custome-ratings h4 {
+  margin-right: 1em;
+  font: normal normal bold 35px/41px Roboto Condensed;
+  color: #0a3641;
+}
+
+.review-cta a {
+  margin: 2em;
+  font: normal normal bold 22px/25px Roboto Condensed;
+  color: #0a3641;
+  border: 3px solid #0a3641;
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.review-cta a:hover {
+  background-color: #0a3641;
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
-  .product-img {
-    display: flex;
-  }
-
-  .product-img img {
+  .product-specific img {
     max-width: 70%;
     height: auto;
   }
@@ -847,6 +920,11 @@ h4 {
     margin: 2em 5px;
   }
 
+  .color-choices img {
+    max-width: 30px;
+    margin: 0px 8px;
+  }
+
   .size-choices {
     margin: 2em 5px;
   }
@@ -861,18 +939,310 @@ h4 {
     text-decoration: underline;
   }
 
+  .color-choices p,
+  .size-choices p,
+  .size-choices a {
+    font: normal normal bold 10px/12px Roboto Condensed;
+  }
+
+  .cta-product-info a {
+    font: normal normal bold 11px/13px Roboto Condensed;
+  }
+
   .product-description p {
-    font: normal normal normal 31px/37px Roboto Condensed;
-    color: #0a3641;
+    font: normal normal normal 15px/18px Roboto Condensed;
+  }
+
+  .ratings {
+    max-width: 200px;
+    height: auto;
+    margin: 2em 2em 0em 2em;
+  }
+
+  .rating-bar {
+    display: none;
+  }
+
+  .custome-ratings h4 {
+    font: normal normal bold 30px/36px Roboto Condensed;
+  }
+
+  .custome-ratings p {
+    color: black;
+  }
+
+  .ratings-stars {
+    max-width: 100px;
+    height: auto;
+    margin: 0px 5px;
+  }
+
+  .more-comment-cta img {
+    display: none;
+  }
+
+  .review-cta a {
+    font: normal normal bold 11px/12px Roboto Condensed;
   }
 }
 
 @media screen and (min-width: 769px) {
+  .product-specific {
+    margin: 10em;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .blue-jacket-img-thumbnails-1 {
+    grid-area: 1 / 1 / 4 / 4;
+  }
+
+  .blue-jacket-img-thumbnails-2 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .blue-jacket-img-thumbnails-3 {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+
+  .blue-jacket-img-thumbnails-4 {
+    grid-area: 4 / 3 / 5 / 4;
+  }
+
+  .product-specific img {
+    max-width: 300px;
+  }
+
+  .blue-jacket-img-thumbnails-1 img {
+    max-width: 1000px;
+  }
 }
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/* ANOTHER PAGE */
+/* Cart */
+.cart-product-summary {
+  display: flex;
+  gap: 10px;
+  margin: 3em 1em;
+  text-transform: uppercase;
+}
+
+.cart-product-img img {
+  max-width: 15%;
+}
+
+.cart-product-summary p,
+.amount-summary p {
+  font: normal normal normal 20px/24px Roboto Condensed;
+  color: #0a3641;
+}
+
+.cart-product-info input {
+  border: 3px solid #0a3641;
+}
+
+.Continue-checkout a {
+  text-decoration: none;
+  font: normal normal normal 45px/53px Roboto Condensed;
+  color: #187a93;
+}
+
+.price-summary {
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1em;
+  float: right;
+  margin-right: 1em;
+}
+
+.Continue-checkout {
+  display: inline-flex;
+  align-items: center;
+  margin: 3em;
+}
+
+@media screen and (max-width: 768px) {
+  .cart-product-img img {
+    max-width: 100px;
+  }
+
+  .cart-product-summary p,
+  .amount-summary p {
+    font: normal normal normal 10px/12px Roboto Condensed;
+  }
+
+  .cart-product-info input {
+    border: 1px solid #0a3641;
+  }
+
+  .cart-product-summary input {
+    margin: 10px 0px;
+  }
+
+  .discount {
+    margin: 0px 10px 10px 10px;
+  }
+
+  .Continue-checkout a {
+    font: normal normal normal 22px/26px Roboto Condensed;
+  }
+
+  .Continue-checkout img {
+    max-width: 40px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .cart-product-summary {
+    margin: 6em;
+  }
+
+  .cart-product-info {
+    justify-content: left;
+  }
+
+  .discount {
+    justify-content: right;
+  }
+
+  .cart-product-summary p,
+  .amount-summary p {
+    font: normal normal normal 30px/38px Roboto Condensed;
+  }
+}
+
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/* ANOTHER PAGE */
+/* Checkout */
+.custom-form h4 {
+  font: normal normal bold 36px/42px Roboto Condensed;
+  color: #0a3641;
+}
+
+.cta-to-shipping {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-to-shipping button {
+  background: #0a3641 0% 0% no-repeat padding-box;
+  border: 5px solid #0b313b;
+}
+
+.cta-to-shipping a {
+  text-decoration: none;
+  color: white;
+  font: normal normal bold 22px/25px Roboto Condensed;
+  text-transform: uppercase;
+}
+
+.terms-rights {
+  all: unset;
+  background: lightgrey;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-terms a,
+.footer-rights {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .checkout-proccess img {
+    max-width: 100%;
+    margin-bottom: 3em;
+  }
+
+  .custom-form h4 {
+    font: normal normal bold 18px/21px Roboto Condensed;
+  }
+
+  .custom-information,
+  .shipping-info {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shipping-info input,
+  .custom-information input {
+    margin: 8px 0px;
+    border: 1px solid #707070;
+    padding: 5px;
+  }
+
+  .cta-to-shipping a {
+    font: normal normal bold 11px/12px Roboto Condensed;
+  }
+
+  .terms-rights {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .checkout-proccess img {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 /*-----------------------------------------*/
 /*-----------------------------------------*/
 /* ANOTHER PAGE */
 /* Checkout-success */
+.Checkout-success-header > * {
+  display: flex;
+  justify-content: center;
+}
+
+.continue-shopping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6em;
+}
+
+.continue-shopping p {
+  font: normal normal bold 36px/42px Roboto Condensed;
+  color: #187a93;
+  text-shadow: 0px 3px 6px #de7c4466;
+}
+
+.continue-shopping p:hover {
+  color: #c4662f;
+  text-shadow: 0px 3px 6px #187a93;
+}
+
+.continue-shopping a {
+  text-decoration: none;
+}
+
+.success-comfirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 3em;
+}
+
+.success-comfirmation h1 {
+  font: normal normal bold 46px/54px Roboto Condensed;
+  color: #187a93;
+}
+
+.success-comfirmation p {
+  font: normal normal normal 12px/14px Roboto Condensed;
+  color: #0a3641;
+}
 
 @media screen and (max-width: 768px) {
   .Checkout-success-header img {
@@ -885,26 +1255,20 @@ h4 {
     margin-bottom: 3em;
   }
 
-  .success-comfirmation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 3em;
-  }
-
   .success-comfirmation h1 {
     font: normal normal bold 23px/27px Roboto Condensed;
-    color: #187a93;
   }
 
   .success-comfirmation p {
     font: normal normal normal 12px/14px Roboto Condensed;
-    color: #0a3641;
   }
 
-  .continue-shopping {
-    display: none;
+  .continue-shopping img {
+    max-width: 30px;
+  }
+
+  .continue-shopping p {
+    font: normal normal bold 18px/21px Roboto Condensed;
   }
 }
 
@@ -916,14 +1280,23 @@ h4 {
 
   .Checkout-success-process {
     max-width: 100%;
-    margin-bottom: 3em;
+    margin: 3em 0em;
+  }
+
+  .proccess-bar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .success-comfirmation p {
+    font: normal normal normal 28px/32px Roboto Condensed;
   }
 }
 
 /*-----------------------------------------*/
 /*-----------------------------------------*/
 /* ANOTHER PAGE */
-/* Cart */
+/* # */
 
 @media screen and (max-width: 768px) {
 }
