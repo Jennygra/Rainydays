@@ -12,39 +12,45 @@
     </head>
     <body>
         <header class="Checkout-success-header">
-                <a href="index.html"><img src="Images/RainyDays_Logo.png" alt="Rainydays Logo"></a>
+                <a href="index.html"><img src="Images/RainyDays_Logo.png" alt="Rainydays Logo" class="logo"></a>
         </header>
         <main class="checkout-main">
           <section class="checkout-proccess">
+            <div class="proccess-bar">
             <img src="Images/Payment-process.png" alt="Payment process - success">
+          </div>
           </section>
+  <section class="checkout-container">
           <section class="custom-form">
             <form method="POST">
             <div class="custom-information">
                 <h4> Custom information</h4>
-                <input type="email" id="email" required value="Email*" required>
+                <input type="email" id="email" required placeholder="Email*" required>
             </div>
             <div class="shipping-info">
                 <h4>Shipping address</h4>
-                <input type="text" id="fname" Value="First name*" required>
-                <input type="text" id="lname" Value="Last name*" required>
-                <input type="text" id="address" Value="Street Address*" required>
-                <input type="text" id="address" Value="Town / City*" required>
-                <input type="text" id="zip" Value="Postcode*" required>
-                <input type="text" id="country" Value="Country*" required>
-                <input type="text" id="State" Value="State">
-                <div>
-                <input type="checkbox" id="billingaddress" name="billingaddress" value="Use different billing address">
-                <label for="billingaddress">Use different billing address</label>
+                <input type="text" id="fname" placeholder="First name*" class="input-fname" required>
+                <input type="text" id="lname" placeholder="Last name*" class="input-lname" required>
+                <input type="text" id="address" placeholder="Street Address*" class="input-address" required>
+                <input type="text" id="address" placeholder="Town / City*" class="input-town"required>
+                <input type="text" id="zip" placeholder="Postcode*" class="input-postcode" required>
+                <input type="text" id="country" placeholder="Country*" class="input-country" required>
+                <input type="text" id="State" placeholder="State" class="input-state">
+                <div class="checkbox-billing">
+                <input type="checkbox" id="billingaddress" name="billingaddress" placeholder="Use different billing address" class="input-billingaddress">
+                <label for="billingaddress" class="billing-label">Use different billing address</label>
                 </div>
-                <input type="text" id="phone number" Value="Phone (optional)">
+                <input type="text" id="phone number" placeholder="Phone (optional)" class="input-phone">
             </div>
             <div class="cta-to-shipping">
                 <button><a href="checkout-success.html">Continue to shipping</a></button>
             </div>
             </form>
         </section>
+      <section class="summary-container">
+           <div class="edit-cart-cta">
            <a href="cart.html">Edit Cart</a>
+          </div>
             <section class="cart-product-summary">
                 <div class="cart-product-img">
                   <img src="Images/home-page-img/productlist-product1.jpg" alt="The blue jacket">
@@ -71,8 +77,10 @@
                     <p>nok 999</p>
                 </div>
             </section>
-        </main>
-            <footer class="terms-rights">
+      </section>
+    </section>
+    </main>
+        <footer class="terms-rights">
               <div class="footer-terms">
                 <a href="#">Refund policy</a>
                 <a href="#">Privacy policy</a>
